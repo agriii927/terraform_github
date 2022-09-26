@@ -1,25 +1,25 @@
 variable "token" {
-  type = var.GITHUB_TOKEN
+  type        = string
   description = "Token to authentificate"
 }
 
 variable "repo_count" {
-  default = 2
+  default     = 2
   description = "Number of repos to made in GitHub"
 }
 
 variable "admin" {
-    default = "agriii927"
+  default = "agriii927"
 }
 
 variable "user_to_collaborate" {
-    default = "Jasstkn"  
+  default = "Jasstkn"
 }
 
 variable "collaborator_permission" {
-    default = "pull"  
+  default = "pull"
 }
 
 variable "step1_till" {
-    default = "2022-09-01"  
+  default = "2022-09-01"
 }
