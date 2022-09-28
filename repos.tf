@@ -19,6 +19,7 @@ resource "github_repository_file" "gitignore" {
   commit_author       = "Terraform User"
   commit_email        = "terraform@example.com"
   overwrite_on_create = true
+  depends_on = [github_repository.example, github_branch.production]
 }
 
 resource "github_repository_file" "README" {
@@ -33,6 +34,7 @@ resource "github_repository_file" "README" {
   commit_author       = "Terraform User"
   commit_email        = "terraform@example.com"
   overwrite_on_create = true
+  depends_on = [github_repository.example, github_branch.production]
 }
 
 resource "github_repository_collaborator" "a_repo_collaborator" {
